@@ -26,3 +26,5 @@ function shortener(m){
   m = m.slice(0, n) + m[n+1].toUpperCase() + m.slice(n+2);
   return m;
 }
+
+// or
