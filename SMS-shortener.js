@@ -20,3 +20,9 @@ Example 1:
 
 
 // Solution
+
+function shortener(m){
+  while(m.length > 160 && (n = m.lastIndexOf(' ')) >= 0)
+  m = m.slice(0, n) + m[n+1].toUpperCase() + m.slice(n+2);
+  return m;
+}
