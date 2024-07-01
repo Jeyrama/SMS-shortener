@@ -28,3 +28,14 @@ function shortener(m){
 }
 
 // or
+
+const shortener = message =>  {
+  while (message.length > 160) {
+      let idx = message.lastIndexOf(' ');
+      if (idx == -1) break;
+      let part1 = message.slice(0, idx);
+      let part2  = message.slice(idx + 1);
+      message = part1 + part2[0].toUpperCase() + part2.slice(1);
+  }
+    return message;
+}
